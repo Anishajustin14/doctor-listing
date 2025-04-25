@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doctor Listing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <input type="text" placeholder="Search Symptoms, Doctors, Specialists, Clinics" data-testid="autocomplete-input" />
+    <button class="search-btn">
+      🔍
+    </button>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <section class="filter-section">
+        <h3 data-testid="filter-header-sort">Sort by</h3>
+        <label><input type="radio" name="sort" data-testid="sort-fees" /> Price: Low-High</label>
+        <label><input type="radio" name="sort" data-testid="sort-experience" /> Experience - Most Experience first</label>
+      </section>
+
+      <section class="filter-section">
+        <h4 data-testid="filter-header-speciality">Speciality</h4>
+        <div class="checkbox-group">
+        <label><input type="checkbox" data-testid="filter-specialty-General-Physician" /> General Physician</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Dentist" /> Dentist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Dermatologist" /> Dermatologist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Paediatrician" /> Paediatrician</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Gynaecologist" /> Gynaecologist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-ENT" /> ENT</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Diabetologist" /> Diabetologist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Cardiologist" /> Cardiologist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Physiotherapist" /> Physiotherapist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Endocrinologist" /> Endocrinologist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Orthopaedic" /> Orthopaedic</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Ophthalmologist" /> Ophthalmologist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Gastroenterologist" /> Gastroenterologist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Pulmonologist" /> Pulmonologist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Psychiatrist" /> Psychiatrist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Urologist" /> Urologist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Dietitian-Nutritionist" /> Dietitian/Nutritionist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Psychologist" /> Psychologist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Sexologist" /> Sexologist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Nephrologist" /> Nephrologist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Neurologist" /> Neurologist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Oncologist" /> Oncologist</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Ayurveda" /> Ayurveda</label>
+        <label><input type="checkbox" data-testid="filter-specialty-Homeopath" /> Homeopath</label>
+      </div>
+    </section>
+
+      <section class="filter-section">
+        <h3 data-testid="filter-header-moc">Mode of consultation</h3>
+        <label><input type="radio" name="consult" data-testid="filter-video-consult" /> Video Consultation</label>
+        <label><input type="radio" name="consult" data-testid="filter-in-clinic" checked /> In-clinic Consultation</label>
+        <label><input type="radio" name="consult" /> All</label>
+      </section>
+    </aside>
+
+    <main class="doctor-list">
+      <div class="doctor-card" data-testid="doctor-card">
+        <img src="https://randomuser.me/api/portraits/men/10.jpg" alt="Dr. Munaf Inamdar"/>
+        <div class="doctor-info">
+          <p data-testid="doctor-name" class="name">Dr. Munaf Inamdar</p>
+          <p data-testid="doctor-specialty" class="specialty">General Physician</p>
+          <p data-testid="doctor-experience" class="experience">27 yrs exp.</p>
+          <p data-testid="doctor-fee" class="fee">₹ 600</p>
+          <button class="book-btn">Book Appointment</button>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-testid="doctor-card">
+        <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Dr. Subhash Bajaj"/>
+        <div class="doctor-info">
+          <p data-testid="doctor-name" class="name">Dr. Subhash Bajaj</p>
+          <p data-testid="doctor-specialty" class="specialty">Dentist</p>
+          <p data-testid="doctor-experience" class="experience">11 yrs exp.</p>
+          <p data-testid="doctor-fee" class="fee">₹ 500</p>
+          <button class="book-btn">Book Appointment</button>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-testid="doctor-card">
+        <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Dr. Mufaddal Zakir"/>
+        <div class="doctor-info">
+          <p data-testid="doctor-name" class="name">Dr. Mufaddal Zakir</p>
+          <p data-testid="doctor-specialty" class="specialty">Dermatologist</p>
+          <p data-testid="doctor-experience" class="experience">8 yrs exp.</p>
+          <p data-testid="doctor-fee" class="fee">₹ 700</p>
+          <button class="book-btn">Book Appointment</button>
+        </div>
+      </div>
+
+      <div class="doctor-card" data-testid="doctor-card">
+        <img src="https://randomuser.me/api/portraits/men/13.jpg" alt="Dr. Ajay Gangoli"/>
+        <div class="doctor-info">
+          <p data-testid="doctor-name" class="name">Dr. Ajay Gangoli</p>
+          <p data-testid="doctor-specialty" class="specialty">Paediatrician</p>
+          <p data-testid="doctor-experience" class="experience">34 yrs exp.</p>
+          <p data-testid="doctor-fee" class="fee">₹ 400</p>
+          <button class="book-btn">Book Appointment</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
